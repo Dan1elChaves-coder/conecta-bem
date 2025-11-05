@@ -3,33 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <title>Projetos - Conecta Bem</title>
-<link rel="stylesheet" href="css/styles.css">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/utilities.css">
+
 </head>
 <body>
 
 <header class="header">
-  <h1 class="title">Nossos Projetos</h1>
+  <h1>Nossos Projetos</h1>
+
+  <button class="hamburger" id="menuBtn">
+    ☰
+  </button>
+
+  <nav class="navbar" id="navMenu">
+    <a href="index.html">Início</a>
+    <a href="projetos.html" class="active">Projetos</a>
+    <a href="cadastro.html">Cadastro</a>
+  </nav>
 </header>
 
-<nav class="navbar">
-  <a href="index.html">Início</a>
-  <a class="active" href="projetos.html">Projetos</a>
-  <a href="cadastro.html">Cadastro</a>
-</nav>
+<main class="container">
 
-<main class="container fade-in">
+  <h2 class="section-title">Ações que transformam realidades</h2>
 
-<section class="card">
-  <h2>Capacitação Profissional</h2>
-  <p>Cursos gratuitos, oficinas, mentoria e apoio ao empreendedorismo feminino.</p>
-  <img src="images/project11.png" class="img" alt="Cursos para mulheres">
-</section>
+  <div class="card-grid">
 
-<section class="card">
-  <h2>Apoio Psicológico</h2>
-  <p>Rede de psicólogas(os) voluntárias(os) oferecendo acolhimento e escuta ativa.</p>
-  <img src="images/project21.png" class="img" alt="Apoio emocional">
-</section>
+    <div class="card">
+      <img src="images/project1.png" alt="Capacitação Profissional">
+      <h3>Capacitação Profissional</h3>
+      <p>Curso de qualificação, mentorias e formação empreendedora.</p>
+      <span class="badge primary">Educação</span>
+    </div>
+
+    <div class="card">
+      <img src="images/project2.png" alt="Apoio Psicológico">
+      <h3>Apoio Psicológico</h3>
+      <p>Atendimento acolhedor com psicólogas voluntárias.</p>
+      <span class="badge secondary">Bem-estar</span>
+    </div>
+
+  </div>
 
 </main>
 
