@@ -1,25 +1,60 @@
-<!DOCTYPE html><html lang="pt-BR"><head>
-<meta charset="UTF-8"><title>Cadastro - Conecta Bem</title>
-<link rel="stylesheet" href="css/styles.css"></head><body>
-<header><h1>Cadastro de Voluntárias(os)</h1></header>
-<nav>
-<a href="index.html">Início</a>
-<a href="projetos.html">Projetos</a>
-<a href="cadastro.html">Cadastro</a>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Cadastro - Conecta Bem</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <h1 class="title">Cadastro de Voluntárias(os)</h1>
+</header>
+
+<nav class="navbar">
+  <a href="index.html">Início</a>
+  <a href="projetos.html">Projetos</a>
+  <a class="active" href="cadastro.html">Cadastro</a>
 </nav>
-<main>
-<form>
-<input name="nome" placeholder="Nome Completo" required>
-<input name="email" type="email" placeholder="E-mail" required>
-<input name="cpf" placeholder="CPF" required>
-<input name="tel" placeholder="Telefone" required>
-<input name="nascimento" type="date" required>
-<input name="cep" placeholder="CEP" required>
-<input name="cidade" placeholder="Cidade" required>
-<select name="estado" required><option>PR</option><option>SP</option></select>
-<button>Enviar</button>
-</form>
+
+<main class="container fade-in">
+
+  <section class="card form-card">
+    <h2>Junte-se a nós 💜</h2>
+    <p>Cadastre-se para apoiar mulheres em situação de vulnerabilidade.</p>
+
+    <form class="form">
+
+      <input name="nome" placeholder="Nome Completo" required>
+      <input name="email" type="email" placeholder="E-mail" required>
+      <input name="cpf" placeholder="CPF" required>
+      <input name="tel" placeholder="Telefone" required>
+      <input name="nascimento" type="date" required>
+      <input name="cep" placeholder="CEP" required>
+      <input name="cidade" placeholder="Cidade" required>
+
+      <select name="estado" required>
+        <option value="" disabled selected>Estado</option>
+        <option>PR</option>
+        <option>SP</option>
+        <option>SC</option>
+        <option>RS</option>
+        <option>MG</option>
+        <option>RJ</option>
+        <option>Outros</option>
+      </select>
+
+      <button type="submit" class="btn">Enviar</button>
+
+    </form>
+  </section>
+
 </main>
-<footer><p>&copy; 2025 Conecta Bem</p></footer>
+
+<footer class="footer">
+  <p>&copy; 2025 Conecta Bem - Todos os direitos reservados</p>
+</footer>
+
 <script src="js/scripts.js"></script>
-</body></html>
+</body>
+</html>
