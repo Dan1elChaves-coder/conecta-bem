@@ -3,48 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <title>Cadastro - Conecta Bem</title>
-<link rel="stylesheet" href="css/styles.css">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/utilities.css">
+
 </head>
 <body>
 
 <header class="header">
-  <h1 class="title">Cadastro de Voluntárias(os)</h1>
+  <h1>Cadastro de Voluntárias(os)</h1>
+
+  <button class="hamburger" id="menuBtn">
+    ☰
+  </button>
+
+  <nav class="navbar" id="navMenu">
+    <a href="index.html">Início</a>
+    <a href="projetos.html">Projetos</a>
+    <a href="cadastro.html" class="active">Cadastro</a>
+  </nav>
 </header>
 
-<nav class="navbar">
-  <a href="index.html">Início</a>
-  <a href="projetos.html">Projetos</a>
-  <a class="active" href="cadastro.html">Cadastro</a>
-</nav>
+<main class="container">
 
-<main class="container fade-in">
+  <form class="form">
 
-<section class="card">
-<h2>Preencha seus dados</h2>
+    <input name="nome" placeholder="Nome Completo" required>
+    <input name="email" type="email" placeholder="E-mail" required>
+    <input name="cpf" placeholder="CPF" required>
+    <input name="tel" placeholder="Telefone" required>
+    <input name="nascimento" type="date" required>
+    <input name="cep" placeholder="CEP" required>
+    <input name="cidade" placeholder="Cidade" required>
 
-<form class="form">
+    <select name="estado" required>
+      <option disabled selected>Estado</option>
+      <option>PR</option>
+      <option>SP</option>
+      <option>RJ</option>
+      <option>RS</option>
+      <option>SC</option>
+      <option>MG</option>
+    </select>
 
-<input name="nome" placeholder="Nome Completo" required>
-<input name="email" type="email" placeholder="E-mail" required>
-<input name="cpf" id="cpf" placeholder="CPF" required>
-<input name="tel" id="telefone" placeholder="Telefone" required>
-<input name="nascimento" type="date" required>
-<input name="cep" id="cep" placeholder="CEP" required>
-<input name="cidade" placeholder="Cidade" required>
+    <button class="btn primary">Enviar</button>
 
-<select name="estado" required>
-<option value="" disabled selected>Estado</option>
-<option>PR</option><option>SP</option><option>RJ</option><option>SC</option>
-</select>
-
-<button class="btn">Enviar</button>
-</form>
-</section>
+  </form>
 
 </main>
 
 <footer class="footer">
-<p>&copy; 2025 Conecta Bem</p>
+  <p>&copy; 2025 Conecta Bem</p>
 </footer>
 
 <script src="js/scripts.js"></script>
