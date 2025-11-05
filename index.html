@@ -1,17 +1,74 @@
-<!DOCTYPE html><html lang="pt-BR"><head>
-<meta charset="UTF-8"><title>Conecta Bem - Apoio a Mulheres</title>
-<link rel="stylesheet" href="css/styles.css"></head><body>
-<header><h1>Conecta Bem</h1></header>
-<nav>
-<a href="index.html">Início</a>
-<a href="projetos.html">Projetos</a>
-<a href="cadastro.html">Cadastro</a>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Conecta Bem - Apoio a Mulheres</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- AOS Animations -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+</head>
+<body>
+
+<header class="hero" data-aos="fade-down">
+  <h1>Conecta Bem</h1>
+  <p>Empoderando mulheres em situação de vulnerabilidade</p>
+</header>
+
+<nav class="menu" data-aos="fade-up">
+  <a href="index.html">Início</a>
+  <a href="projetos.html">Projetos</a>
+  <a href="cadastro.html">Cadastro</a>
 </nav>
-<main>
-<h2>Sobre a ONG</h2>
-<p>A Conecta Bem apoia mulheres em situação de vulnerabilidade social, promovendo acolhimento, capacitação e autonomia.</p>
-<img src="images/hero.png" alt="Ilustração de apoio">
+
+<main class="container">
+
+<section class="intro" data-aos="zoom-in">
+  <h2>Sobre a ONG</h2>
+  <p>
+    A Conecta Bem apoia mulheres em situação de vulnerabilidade social,
+    oferecendo acolhimento, capacitação profissional e suporte para autonomia financeira.
+  </p>
+  <img src="images/hero.png" alt="Ilustração de apoio a mulheres" class="hero-img">
+</section>
+
+<section class="cards">
+  <div class="card" data-aos="fade-up">
+    <h3>Acolhimento</h3>
+    <p>Apoio emocional e social com profissionais e voluntárias preparadas.</p>
+  </div>
+
+  <div class="card" data-aos="fade-up" data-aos-delay="150">
+    <h3>Capacitação</h3>
+    <p> Cursos gratuitos para desenvolvimento pessoal e profissional.</p>
+  </div>
+
+  <div class="card" data-aos="fade-up" data-aos-delay="300">
+    <h3>Autonomia</h3>
+    <p> Suporte para geração de renda e independência financeira.</p>
+  </div>
+</section>
+
 </main>
-<footer><p>&copy; 2025 Conecta Bem</p></footer>
+
+<footer>
+  <p>&copy; 2025 Conecta Bem — Transformando vidas com tecnologia e apoio</p>
+</footer>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration: 900,
+  once: true,
+  easing: 'ease-out-back'
+});
+</script>
+
 <script src="js/scripts.js"></script>
-</body></html>
+
+</body>
+</html>
