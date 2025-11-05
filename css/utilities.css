@@ -1,0 +1,20 @@
+/* utilities.css - helpers and small utilities */
+
+/* Spacing helpers */
+.m-1 { margin: var(--space-1) !important; }
+.m-2 { margin: var(--space-2) !important; }
+.p-2 { padding: var(--space-2) !important; }
+
+/* Text helpers */
+.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* Display helpers */
+.hide { display: none !important; }
+
+/* Grid helpers */
+.row { display:flex; gap: var(--space-2); align-items:center; }
+.col { flex:1; }
+
+/* small screen nav helper */
+.hamburger { display:none; cursor:pointer; width: 36px; height:36px; border-radius:8px; background: rgba(255,255,255,0.06); align-items:center; justify-content:center; }
+@media(max-width:768px){ .hamburger { display:flex; } .navbar ul { display:none; } }

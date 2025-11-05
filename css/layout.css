@@ -1,0 +1,79 @@
+/* layout.css - grid system, header, navbar, footer, responsive breakpoints */
+
+/* Grid: 12-column helper (uses CSS grid) */
+.layout {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), 1fr);
+  gap: var(--space-3);
+}
+
+/* Column helper classes: .col-span-N */
+[class*="col-span-"] {
+  grid-column: span 12;
+}
+@media (min-width: 480px) { .col-span-sm-6 { grid-column: span 6; } }
+@media (min-width: 768px) { .col-span-md-4 { grid-column: span 4; } }
+@media (min-width: 1024px) { .col-span-lg-3 { grid-column: span 3; } }
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, var(--color-primary-400), var(--color-accent));
+  color: var(--color-white);
+  padding: calc(var(--space-3) * 1.25);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(16,185,129,0.08);
+}
+.header .title { font-size: var(--type-xl); }
+
+/* Navigation */
+.navbar {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--space-2);
+}
+.navbar a {
+  padding: 8px 14px;
+  text-decoration: none;
+  color: var(--color-white);
+  background: rgba(255,255,255,0.12);
+  border-radius: 999px;
+  font-weight: 600;
+}
+.navbar a.active { background: var(--color-white); color: var(--color-primary-600); box-shadow: 0 6px 18px rgba(11,22,39,0.06); }
+
+/* Main container + cards area */
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+.card {
+  grid-column: span 12;
+  background: var(--color-surface);
+  color: var(--color-black);
+  padding: var(--space-3);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(15,23,42,0.06);
+}
+@media(min-width: 768px){
+  .card.half { grid-column: span 6; }
+  .card.third { grid-column: span 4; }
+}
+
+/* Footer */
+.footer{
+  margin-top: var(--space-4);
+  padding: var(--space-3);
+  text-align: center;
+  color: var(--color-muted);
+}
+
+/* Breakpoints (5+) */
+@media (min-width: 480px) {}
+@media (min-width: 640px) {}
+@media (min-width: 768px) {}
+@media (min-width: 1024px) {}
+@media (min-width: 1280px) {}
