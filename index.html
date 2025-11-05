@@ -3,42 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <title>Conecta Bem - Apoio a Mulheres</title>
-<link rel="stylesheet" href="css/styles.css">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/utilities.css">
+
 </head>
 <body>
 
 <header class="header">
-  <h1 class="title">Conecta Bem</h1>
-  <p>Empoderando mulheres em situação de vulnerabilidade por meio de acolhimento, capacitação e autonomia.</p>
+  <h1>Conecta Bem</h1>
+
+  <button class="hamburger" id="menuBtn">
+    ☰
+  </button>
+
+  <nav class="navbar" id="navMenu">
+    <a href="index.html" class="active">Início</a>
+    <a href="projetos.html">Projetos</a>
+    <a href="cadastro.html">Cadastro</a>
+  </nav>
 </header>
 
-<nav class="navbar">
-  <a class="active" href="index.html">Início</a>
-  <a href="projetos.html">Projetos</a>
-  <a href="cadastro.html">Cadastro</a>
-</nav>
+<main class="container hero">
 
-<main class="container fade-in">
+  <section class="grid-2">
+    <div>
+      <h2>Transformando vidas com acolhimento e oportunidade</h2>
+      <p>
+        A Conecta Bem apoia mulheres em situação de vulnerabilidade, promovendo acompanhamento emocional, acesso à saúde e capacitação profissional.
+      </p>
+      <a href="cadastro.html" class="btn primary">Seja Voluntária(o)</a>
+    </div>
 
-<section class="card">
-  <h2>Bem-vinda(o)!</h2>
-  <p>Nossa missão é transformar vidas oferecendo apoio psicológico, capacitação profissional e rede de suporte para mulheres que buscam reconstruir sua trajetória com dignidade e força.</p>
-</section>
-
-<section class="card">
-  <h2>Como Atuamos</h2>
-  <ul>
-    <li>📚 Capacitação profissional e empreendedorismo</li>
-    <li>💜 Apoio emocional e psicológico</li>
-    <li>🤝 Rede de acolhimento e assistência</li>
-    <li>🎯 Desenvolvimento pessoal e autonomia</li>
-  </ul>
-</section>
+    <img src="images/hero.png" alt="Apoio a mulheres" class="hero-img">
+  </section>
 
 </main>
 
 <footer class="footer">
-  <p>&copy; 2025 Conecta Bem — Transformando realidades com empatia</p>
+  <p>&copy; 2025 Conecta Bem — Todas as mulheres merecem oportunidade e acolhimento.</p>
 </footer>
 
 <script src="js/scripts.js"></script>
