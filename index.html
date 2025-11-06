@@ -1,51 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<title>Conecta Bem - Apoio a Mulheres</title>
-
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/components.css">
-<link rel="stylesheet" href="css/utilities.css">
-
-</head>
-<body>
-
-<header class="header">
-  <h1>Conecta Bem</h1>
-
-  <button class="hamburger" id="menuBtn">
-    ☰
-  </button>
-
-  <nav class="navbar" id="navMenu">
-    <a href="index.html" class="active">Início</a>
-    <a href="projetos.html">Projetos</a>
-    <a href="cadastro.html">Cadastro</a>
-  </nav>
-</header>
-
-<main class="container hero">
-
-  <section class="grid-2">
-    <div>
-      <h2>Transformando vidas com acolhimento e oportunidade</h2>
-      <p>
-        A Conecta Bem apoia mulheres em situação de vulnerabilidade, promovendo acompanhamento emocional, acesso à saúde e capacitação profissional.
-      </p>
-      <a href="cadastro.html" class="btn primary">Seja Voluntária(o)</a>
-    </div>
-
-    <img src="images/hero.png" alt="Apoio a mulheres" class="hero-img">
-  </section>
-
-</main>
-
-<footer class="footer">
-  <p>&copy; 2025 Conecta Bem — Todas as mulheres merecem oportunidade e acolhimento.</p>
-</footer>
-
-<script src="js/scripts.js"></script>
-</body>
-</html>
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><title>Conecta Bem - SPA</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/utilities.css"></head><body>
+<header class="header container"><h1 class="title">Conecta Bem</h1><button class="hamburger" id="hamburger" aria-label="Abrir menu">☰</button><nav class="navbar" id="nav"><a href="/" data-route="/" class="nav-link active">Início</a><a href="/projetos" data-route="/projetos" class="nav-link">Projetos</a><a href="/cadastro" data-route="/cadastro" class="nav-link">Cadastro</a></nav></header>
+<main class="container" id="app" role="main" aria-live="polite"></main>
+<footer class="footer container"><p>&copy; 2025 Conecta Bem</p></footer>
+<script src="js/spa.js" defer></script>
+<script src="js/validation.js" defer></script>
+<script src="js/scripts.js" defer></script>
+</body></html>
